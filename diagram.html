@@ -1,11 +1,93 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Diagram</title>
-  </head>
-  <body>
-    <img src="2.png" alt="2">
-    <img src="3.png" alt="3">
-    <img src="usecase.png" alt="usecase">
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaLearn Platform Diagrams</title>
+</head>
+<body>
+    <h1>LinguaLearn Platform Diagrams</h1>
+
+    <h2>1. Use Case Diagram</h2>
+    <p>
+        <strong>Purpose:</strong> A Use Case Diagram is used to identify the interactions between the users (actors) and the system. It shows what functionalities (use cases) the system provides and who interacts with them.
+    </p>
+    <p>
+        <strong>Explanation:</strong><br>
+        <ul>
+            <li><strong>Actors:</strong></li>
+            <ul>
+                <li><strong>Student:</strong> A learner using the platform.</li>
+                <li><strong>Teacher:</strong> An educator who interacts with the platform.</li>
+                <li><strong>Admin:</strong> A system administrator responsible for managing the platform.</li>
+                <li><strong>Developer:</strong> A third-party developer integrating LinguaLearn features into other applications.</li>
+            </ul>
+            <li><strong>Use Cases:</strong></li>
+            <ul>
+                <li><strong>Access Learning Material:</strong> Students can access educational content.</li>
+                <li><strong>Translate Content:</strong> Both students and teachers can translate content into different languages.</li>
+                <li><strong>Adapt Curriculum:</strong> Personalized learning paths are adapted based on student needs.</li>
+                <li><strong>Offline Learning:</strong> Students can download content for offline access.</li>
+                <li><strong>Contribute Language Data:</strong> Teachers can contribute data to help document endangered dialects.</li>
+                <li><strong>Manage System:</strong> Admins manage the platform’s overall operations.</li>
+                <li><strong>Integrate API:</strong> Developers integrate LinguaLearn features into third-party apps.</li>
+            </ul>
+        </ul>
+    </p>
+    <img src="https://www.plantuml.com/plantuml/dpng/NP7FRi8m38VlUGgBEuTH_jmcgd910cqIx06yr7IHqXGvpgIz_LBaDQEtVFbzYXrx7mLPKkyDMXaOBf9Q2g9q9RHVn4frsxkWvmDzan_kEJCfaiL8iAYjfHZXHCZ1XGxEACGE_G8mmaVpKimhOuW-nz0CGN8zLLR_7clnBj0aPcUJJxqQLJ7URZVl0atrr5WNOtoStMVATKuOkeGTmG45rTmKyunX32y_KUYlrBR4nznansE_zVjHuvqnEYnOBbyV_tlcrOoh6Q-DZdVodxcQySOy5g2qDTCAz6PdzXJQlCfV" alt="Use Case Diagram">
+
+    <h2>2. Component Diagram</h2>
+    <p>
+        <strong>Purpose:</strong> A Component Diagram shows the structural organization of the software system. It identifies the main components of the system and how they interact with each other.
+    </p>
+    <p>
+        <strong>Explanation:</strong><br>
+        <ul>
+            <li><strong>LinguaLearn Platform Components:</strong></li>
+            <ul>
+                <li><strong>User Interface:</strong> The frontend through which users interact with the system.</li>
+                <li><strong>Content Management System:</strong> Manages and delivers educational content.</li>
+                <li><strong>Translation Engine:</strong> Handles dynamic translation of content using Llama 3.1 and MuAViC technologies.</li>
+                <li><strong>Adaptive Learning Module:</strong> Provides personalized learning experiences for each student.</li>
+                <li><strong>Edge Computing Node:</strong> Allows offline processing and local storage of content.</li>
+            </ul>
+            <li><strong>External Integrations:</strong></li>
+            <ul>
+                <li><strong>Llama 3.1:</strong> Language model used for translations.</li>
+                <li><strong>MuAViC:</strong> Meta's audio-visual translation technology integrated into the translation engine.</li>
+            </ul>
+        </ul>
+    </p>
+    <img src="https://www.plantuml.com/plantuml/dpng/XP0_2y8m4CNtVeh3NK7SnL8o26qHh2xIuJ1d2JQNaZ-2YD_Tf7LmABWbx_SkxrrspgFrGVVPWDSxTWIBKd4Ni2Iq38SU_SrOlO1N1d0vERAmPq_sXbTgarIOU6KF5NASrkbuV3fFUgIDHNRn3MKO17UAgGLqq8W4Suc3Lm-2CIkcGcLaw2TBNbR98sIiL1Wz19yCjP4J5aMTHTu8M2wtS2bxr0YRrRhz4QkGdrMHb9dkesNgCKU-yNFepyfp8wdjEziHo_ZJ7m00" alt="Component Diagram">
+
+    <h2>3. Deployment Diagram</h2>
+    <p>
+        <strong>Purpose:</strong> A Deployment Diagram shows the physical deployment of the software system. It illustrates where the software components are located and how they are distributed across the infrastructure.
+    </p>
+    <p>
+        <strong>Explanation:</strong><br>
+        <ul>
+            <li><strong>Cloud Infrastructure:</strong></li>
+            <ul>
+                <li><strong>Central Server:</strong> Hosts core services like the Translation Engine, Content Management System, and Adaptive Learning Module.</li>
+            </ul>
+            <li><strong>Edge Computing Node:</strong></li>
+            <ul>
+                <li>Provides local processing and storage, enabling offline access to educational content.</li>
+            </ul>
+            <li><strong>User Devices:</strong></li>
+            <ul>
+                <li><strong>Mobile Device:</strong> Users can download and access content on their mobile devices.</li>
+                <li><strong>Laptop:</strong> Users can also access and download content on laptops.</li>
+            </ul>
+            <li><strong>Interactions:</strong></li>
+            <ul>
+                <li><strong>Download Content:</strong> User devices download content from the Edge Computing Node for offline access.</li>
+                <li><strong>Request Services:</strong> User devices request services from the Central Server in the cloud.</li>
+            </ul>
+        </ul>
+    </p>
+    <img src="https://www.plantuml.com/plantuml/dpng/ZL7DIiGm4BxdAORUzmNs82lT7eHs5LTFPGzZCrkAwKpDJqLatzqahI0guYbXljz9TiwZzM4qgZCID1HbFcxuRD5v6peVB1NmhW1OD4MSs5iqS2GxarqGWFR18Zk3VX26Ylk1wRG0fR2F4cYGiQSnNOzlpjEuujSQ9p_C13MXvO5xQ4G7a-KNTL5gYQrqJr3AE0MVE8SuB00TLEKXLsXhwL8hBpR6975xUpwRs0Fkh7JaN9ITaj-4tNEaGF7eoCAUvY6Yonvj8q-3eNMOJUhOJgOi_8R2PdELuxUmbrSsWXhMPN-b_dYvBTpJIo3dyoIrK9znVtf_vVp7T4UiumT_0000" alt="Deployment Diagram">
+</body>
 </html>
